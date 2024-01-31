@@ -1,0 +1,48 @@
+
+
+#1
+x = int(input())
+y = int(input())
+z = int(input())
+total_cost = x + (y * z) * 12
+print(total_cost)
+
+#2
+x = int(input())
+y = int(input())
+z = x // y
+print(z)
+
+#3
+encrypted = input()
+decrypted = encrypted[2:len(encrypted)] + encrypted[0:2]
+print(decrypted)
+
+#qn4
+entry1 = input()
+entry2 = input()
+entry3 = input()
+if entry1 == entry2 == entry3:
+  print("OK")
+elif entry1 != entry2 and entry1 != entry3:
+  print("BOTH MISMATCH")
+elif entry1 != entry2 and entry1 == entry3:
+  print("ENTRY 2 MISMATCH")
+else:
+  print("ENTRY 3 MISMATCH")
+
+#qn5
+drink = input()
+if drink == "t" or drink == "c":
+  refills = int(input())
+  print(1 + refills)
+else:
+  print("1")
+
+#qn6
+glass = 0
+while glass <= 12:
+  units = int(input())
+  glass = glass + units
+drip_tray = glass - 12
+print(drip_tray)
